@@ -3,7 +3,7 @@ import Social from "../Social";
 
 const heroContent = {
   shapeImage: "hero-shape",
-  heroImage: "about.jpeg",
+  heroImage: "about2.jpeg",
   name: "Antreas Papadopoulos",
   description: `Full stack developer with 3+ years in the Logistics industry but aspiring to
   specialise in Smart Contract development and Web3 applications!`,

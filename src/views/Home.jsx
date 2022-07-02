@@ -16,9 +16,9 @@ const Home = () => {
   useEffect(() => {
     const Toast = Swal.mixin({
       toast: true,
-      position: 'top-end',
+      position: 'bottom-right',
       showConfirmButton: false,
-      timer: 3000,
+      timer: 5000,
       timerProgressBar: true,
       didOpen: (toast) => {
         toast.addEventListener('mouseenter', Swal.stopTimer)
@@ -29,7 +29,7 @@ const Home = () => {
     Toast.fire({
       icon: 'info',
       title: 'Dark mode available',
-      text: 'For your viewing pleasure!',
+      text: 'For your viewing pleasure! (Top Right)',
     })
   }, []);
 
@@ -109,7 +109,7 @@ const Home = () => {
           <div className="edina_tm_title">
             <h3>Contact <img src="img/svg/contact.svg" alt="icon" /></h3>
             <p>
-              It's the 21st century, I am not gonna put a "Contact me" form. If you want to reach out, use one of the two options below.
+              It's the 21st century, I refuse to put a "Contact me" form. If you want to reach out, please use one of the two options below.
             </p>
           </div>
           <div className="extra_info">

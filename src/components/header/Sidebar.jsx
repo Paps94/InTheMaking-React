@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 import ScrollspyNav from "react-scrollspy-nav";
 
 // logo name
-const logo = "dark";
-const logo2 = "light";
+const logo = "logo1";
+const logo2 = "logo2";
 
 // sidebar content
 const sidebarContent = [
@@ -45,6 +45,18 @@ const Sidebar = () => {
       >
         <div className="sidebar_inner">
           <div className="logo">
+            <Link to="/">
+              <img
+                className="logo_dark"
+                src={`img/logo/${logo}.png`}
+                alt="brand"
+              />
+              <img
+                className="logo_light"
+                src={`img/logo/${logo2}.png`}
+                alt="brand"
+              />
+            </Link>
             <img className="hero_image_small aos-init aos-animate" data-aos-anchor=".experience" data-aos="fade-down-left" data-aos-duration="1200" data-aos-delay="200" src={`${sidebarFooterContent.avatar}`} alt="my face"/>
           </div>
           {/* End .logo */}

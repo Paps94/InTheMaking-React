@@ -426,5 +426,19 @@ body.intro .loader_line:after {
 }
 
 .theme-dark .project-tools_list .title {
-    color: #fff;
+  color: #fff;
+}
+
+.theme-dark .logo a {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.theme-dark .solu_title h3 {
+  color: #212121!important;
+}
+
+.theme-dark .solution_cards_box .solution_card:hover .solu_title h3 {
+  color: #fff!important;
 }
