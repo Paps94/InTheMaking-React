@@ -48,7 +48,7 @@ const OtherSkills = () => {
       <div className="section_our_solution">
         <div className="row">
         {otherSkillsContent.map((val, i) => (
-          <div className="col-lg-4 col-md-4 col-sm-4">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <OtherSkillsCard name={val.name} image={val.image} link={val.link} description={val.description} />
           </div>
         ))}

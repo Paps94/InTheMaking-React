@@ -1213,6 +1213,7 @@ body.dark .loader_line:after {
   height: auto;
   clear: both;
   float: left;
+  margin-bottom: 25px;
 }
 .edina_tm_title h3 {
   font-size: 45px;
@@ -1247,9 +1248,12 @@ body.dark .loader_line:after {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  @media screen and (max-width: 765px) {
+    display: inline-flex;
+  }
 }
 .edina_tm_services ul li {
-  margin: 0px 0px 30px 0px;
+  margin: 0px 10px 30px 10px;
   width: 25%;
   padding-left: 30px;
   float: left;
@@ -2106,7 +2110,7 @@ body.modal {
 .edina_tm_contact .extra_info .wrapper > li {
   margin: 0px 0px 30px 0px;
   flex: 0 0 auto;
-  width: 33.33333333%;
+  width: 50%;
   padding-left: 30px;
 }
 .edina_tm_contact .extra_info .wrapper > li .list_inner {

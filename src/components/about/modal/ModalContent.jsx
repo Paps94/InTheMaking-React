@@ -9,7 +9,7 @@ const ModalContent = () => {
   return (
     <>
       <div className="row">
-        <div className="col-12 mt-5">
+        <div className="col-12 mt-5 mb-5">
           <h3>Personal Info</h3>
           <PersonalInfo />
           <div className="edina_tm_button pull-right">
@@ -22,13 +22,13 @@ const ModalContent = () => {
         {/* End  PersonalInfo */}
 
         <div className="row resume-box">
-          <div className="col-6">
+          <div className="col-md-12 col-lg-6 col-xl-6">
             <h3>Experience</h3>
             <Experience />
           </div>
           {/* End  Experience */}
 
-          <div className="col-6">
+          <div className="col-md-12 col-lg-6 col-xl-6">
             <h3>Education</h3>
             <Education />
           </div>
