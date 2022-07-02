@@ -16,11 +16,3 @@ npm run start
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration (vue-cli)
-See [Configuration Reference](https://cli.vuejs.org/config/).
