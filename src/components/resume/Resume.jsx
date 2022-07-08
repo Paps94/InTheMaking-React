@@ -48,7 +48,7 @@ const Service = () => {
     },
     {
       name: "NFT - Generation and Minting",
-      icon: "NFT",
+      icon: "nft",
       gitLink: "https://github.com/Paps94/Web3-NFT-Generation-and-Minting",
       animation: "fade-right",
       description: "An attempt at what a NFT generating and minting contract would look like. You have the ability for a customizable NFT generation (3rd party MIT script) which gives the contract creator the ability to fully customize the rarity of NFTs and so on. \n I wanted to get an idea of what is like to generate and mint NFTs not because I think their current state is important in the Web3 ecosystem or because they can make me rich but because a friend has a dream to start his own company to promote renewable energy and ways to move forward in Cyprus and an NFT 'sale' could provide the capital needed for a good cause. The project comes with a basic website which will have a countdown when people will be able to buy, or better say, mint the generated NFTs and all profits would go directly to that very idea of trying to make our home, Cyprus, into the most enviromentally aware and efficient country in the EU. \n I know it's a far fetched goal but a journey of a thousand miles begins with a single step! :)",
