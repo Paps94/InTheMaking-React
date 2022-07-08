@@ -36,7 +36,7 @@ const Sidebar = () => {
       width: 800,
       padding: '20px',
       html:
-        'Meraki started as an idea and is currently a registed company.<br> <br>This will be my next personal project which I hope to eventually integrate with Web3 and govern its logic through Smart Contracts ' +
+        'Meraki started as an idea and is currently a registed company.<br> <br>This will be my next personal project which I hope to eventually integrate with Web3 and govern its logic through Smart Contracts. ' +
         'It\'s my familys personal project to promote the ongoing digitalisation of Cyprus in an attempt to turn it into an information technology provider. <br><br>' +
         'That is all I can share for the time being unfortunately :p',
       showCloseButton: true,
