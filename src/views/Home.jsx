@@ -11,27 +11,28 @@ import Swal from 'sweetalert2';
 
 const Home = () => {
   const [isDark, setIsDark] = useState(false);
+
   document.querySelector("body").classList.remove("rtl");
 
-  useEffect(() => {
-    const Toast = Swal.mixin({
-      toast: true,
-      position: 'bottom-right',
-      showConfirmButton: false,
-      timer: 5000,
-      timerProgressBar: true,
-      didOpen: (toast) => {
-        toast.addEventListener('mouseenter', Swal.stopTimer)
-        toast.addEventListener('mouseleave', Swal.resumeTimer)
-      }
-    });
-
-    Toast.fire({
-      icon: 'info',
-      title: 'Dark mode available',
-      text: 'For your viewing pleasure! (Top Right)',
-    })
-  }, []);
+  // useEffect(() => {
+  //   const Toast = Swal.mixin({
+  //     toast: true,
+  //     position: 'bottom-right',
+  //     showConfirmButton: false,
+  //     timer: 5000,
+  //     timerProgressBar: true,
+  //     didOpen: (toast) => {
+  //       toast.addEventListener('mouseenter', Swal.stopTimer)
+  //       toast.addEventListener('mouseleave', Swal.resumeTimer)
+  //     }
+  //   });
+  //
+  //   Toast.fire({
+  //     icon: 'info',
+  //     title: 'Dark mode available',
+  //     text: 'For your viewing pleasure! (Top Right)',
+  //   })
+  // }, []);
 
 
   const handleLabelClick = () => {
@@ -94,8 +95,7 @@ const Home = () => {
           <div className="edina_tm_title">
             <h3>Blog <img src="img/svg/pen-clip.svg" alt="icon" /></h3>
             <p>
-                Some people write in diaries, others in blog posts... I write here! If I am to create one of these blogs, is because I am venting out to myself mainly!
-                Some have to do with work, others with personal issues while some might be pet peeves.
+                Some people write in diaries, others in blog posts... I write here! This willl be my professional digital diary on my journey through Web3 to perhaps help others also joining this sector for the first time!
             </p>
             <ComingSoon />
           </div>
@@ -109,7 +109,7 @@ const Home = () => {
           <div className="edina_tm_title">
             <h3>Contact <img src="img/svg/contact.svg" alt="icon" /></h3>
             <p>
-              It's the 21st century, I refuse to put a "Contact me" form. If you want to reach out, please use one of the two options below.
+              If you would like to reach out, please use one of the two options below. Clicking my email address will compose an email for you and clicking my number will promt you to give me a call!
             </p>
           </div>
           <div className="extra_info">

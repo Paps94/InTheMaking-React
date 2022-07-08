@@ -1,8 +1,9 @@
 
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ScrollspyNav from "react-scrollspy-nav";
+import Swal from 'sweetalert2';
 
 // logo name
 const logo = "logo1";
@@ -26,7 +27,66 @@ const sidebarFooterContent = {
 };
 
 const Sidebar = () => {
+  const [merakiClicked, setmerakiClicked] = useState(false);
   const [click, setClick] = useState(false);
+
+  const handleMerakiClick = () => {
+    Swal.fire({
+      title: '<strong>What is <u>Meraki</u>?</strong>',
+      width: 800,
+      padding: '20px',
+      html:
+        'Meraki started as an idea and is currently a registed company.<br> <br>This will be my next personal project which I hope to eventually integrate with Web3 and govern its logic through Smart Contracts ' +
+        'It\'s my familys personal project to promote the ongoing digitalisation of Cyprus in an attempt to turn it into an information technology provider. <br><br>' +
+        'That is all I can share for the time being unfortunately :p',
+      showCloseButton: true,
+      showCancelButton: true,
+      focusConfirm: false,
+      confirmButtonText:
+        ' Cool beans! <i class="fa fa-thumbs-up"></i>',
+      confirmButtonAriaLabel: 'Niceee!',
+      cancelButtonText:
+        '<i class="fa fa-thumbs-down"></i>',
+      cancelButtonAriaLabel: 'Whatever..'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          width: 0,
+          height: 0,
+          showCancelButton: false,
+          showConfirmButton: false,
+          timer: 2000,
+          timerProgressBar: true,
+          backdrop: `
+            rgba(0,0,0,0.4)
+            url(${
+              process.env.PUBLIC_URL + '/img/memes/peepo-dance-pepe.gif'
+            })
+            center right
+            no-repeat
+          `
+        })
+      } else {
+        Swal.fire({
+          width: 0,
+          height: 0,
+          showCancelButton: false,
+          showConfirmButton: false,
+          timer: 2000,
+          timerProgressBar: true,
+          backdrop: `
+            rgba(0,0,0,0.4)
+            url(${
+              process.env.PUBLIC_URL + '/img/memes/peepo-leave-leaving.gif'
+            })
+            center right
+            no-repeat
+          `
+        })
+      }
+    });
+  };
+
   const handleClick = () => setClick(!click);
   return (
     <>
@@ -45,18 +105,18 @@ const Sidebar = () => {
       >
         <div className="sidebar_inner">
           <div className="logo">
-            <Link to="/">
               <img
+                onClick={handleMerakiClick}
                 className="logo_dark"
                 src={`img/logo/${logo}.png`}
                 alt="brand"
               />
               <img
+                onClick={handleMerakiClick}
                 className="logo_light"
                 src={`img/logo/${logo2}.png`}
                 alt="brand"
               />
-            </Link>
             <img className="hero_image_small aos-init aos-animate" data-aos-anchor=".experience" data-aos="fade-down-left" data-aos-duration="1200" data-aos-delay="200" src={`${sidebarFooterContent.avatar}`} alt="my face"/>
           </div>
           {/* End .logo */}

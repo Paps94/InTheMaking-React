@@ -20,7 +20,7 @@ const Address = () => {
           {/* End .content */}
         </div>
       </li>
-      <li data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100">
+      <li data-aos="fade-left" data-aos-duration="1200" data-aos-delay="100">
         <div className="list_inner">
           <div className="icon">
             <img src="img/address/email.png" alt="icon" />

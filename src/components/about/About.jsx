@@ -73,7 +73,7 @@ const About = () => {
               </h3>
               <p>
                 I'm a full stack developer with a sweet tooth for blockchain technologies.
-                Originally from Cyprus but I'm currently paying that London rate.
+                Originally from Cyprus but I'm currently living with my 2 rescued cats,<span id="Loki">Loki</span> and <span id="Billie">Billie</span> in London.
                 I started with back end web development and moved to full stack applications
                 after I landed my first job. During my free time I try to work on projects for self
                 development. Currently, these are Web3 related to learn Solidity and familiarise myself

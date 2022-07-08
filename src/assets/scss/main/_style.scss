@@ -458,7 +458,7 @@ body.dark .loader_line:after {
     padding: 20px;
   }
 }
-.edina_tm_sidebar .logo a{
+.edina_tm_sidebar .logo img{
   padding: 10px;
   margin-right: 35px;
 }
@@ -2759,6 +2759,16 @@ a {
   .edina_tm_services ul li {
     width: 100%;
     padding-left: 0px;
+  }
+}
+
+@media (max-width: 680px) {
+  .edina_tm_services ul {
+    width: 100%!important;
+    display: inline-grid;
+  }
+  .edina_tm_services ul li {
+    width: 100%!important;
   }
 }
 @media (max-width: 480px) {
