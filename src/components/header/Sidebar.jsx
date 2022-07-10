@@ -6,8 +6,8 @@ import ScrollspyNav from "react-scrollspy-nav";
 import Swal from 'sweetalert2';
 
 // logo name
-const logo = "logo1";
-const logo2 = "logo2";
+const logo = "tab_logo";
+const logo2 = "tab_logo_white";
 
 // sidebar content
 const sidebarContent = [
@@ -36,17 +36,19 @@ const Sidebar = () => {
       width: 800,
       padding: '20px',
       html:
-        'Meraki started as an idea and is currently a registed company.<br> <br>This will be my next personal project which I hope to eventually integrate with Web3 and govern its logic through Smart Contracts. ' +
-        'It\'s my familys personal project to promote the ongoing digitalisation of Cyprus in an attempt to turn it into an information technology provider. <br><br>' +
+        'The Greek lettter \'μ\' in an abbreviation for \'Meraki\' which by definition is: [may-rah-kee] (adjective) A word that modern Greeks often use to describe doing something with soul, creativity, or love. <br><br>' +
+        'This will be my next personal project which I hope to eventually integrate with Web3 and govern its logic through Smart Contracts. <br><br>' +
+        'The basic idea is co-living for digital nomads and young professionals. <br><br>' +
         'That is all I can share for the time being unfortunately :p',
       showCloseButton: true,
+      confirmButtonColor: '#34495e',
       showCancelButton: true,
       focusConfirm: false,
       confirmButtonText:
-        ' Cool beans! <i class="fa fa-thumbs-up"></i>',
+        'Cool beans',
       confirmButtonAriaLabel: 'Niceee!',
       cancelButtonText:
-        '<i class="fa fa-thumbs-down"></i>',
+        'Not cool beans',
       cancelButtonAriaLabel: 'Whatever..'
     }).then((result) => {
       if (result.isConfirmed) {

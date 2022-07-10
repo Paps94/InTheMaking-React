@@ -33,15 +33,19 @@
 }
 
 .hero_image_small {
-  display: inline-block;
-  position: absolute;
-  right: 30px;
-  width: 80px;
-  height: 80px;
-  top: 20px;
+  vertical-align: middle;
   border-radius: 50%;
-  padding: 0!important;
-  margin: 0!important;
+  width: 100px;
+  height: 100px;
+  margin-left: 35px;
+  margin-right: 0!important;
+  background-size: cover;
+  background-position: 50% 50%;
+  image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges;          /* Firefox */
+  image-rendering: -o-crisp-edges;            /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
+  -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
 }
 
 @media screen and (max-width: 1199px) {
