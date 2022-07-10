@@ -550,9 +550,10 @@ body.dark .loader_line:after {
   height: auto;
   display: flex;
   align-items: center;
-  padding: 40px;
+  flex: auto;
+  padding: 40px 20px;
   @media screen and (max-width: 1199px) {
-    padding: 20px;
+    padding: 20px 10px;
   }
 }
 .edina_tm_sidebar .author .image {
@@ -561,6 +562,15 @@ body.dark .loader_line:after {
   height: 50px;
   border-radius: 100%;
   display: inline-block;
+  @media screen and (max-width: 1500px) {
+    display: none;
+  }
+  @media screen and (max-width: 1199px) {
+    display: inline-block;
+  }
+  @media screen and (max-width: 360px) {
+    display: none;
+  }
 }
 .edina_tm_sidebar .author .main {
   position: absolute;
