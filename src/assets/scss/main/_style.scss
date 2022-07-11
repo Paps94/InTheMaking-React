@@ -562,6 +562,7 @@ body.dark .loader_line:after {
   height: 50px;
   border-radius: 100%;
   display: inline-block;
+  object-fit: cover;
   @media screen and (max-width: 1500px) {
     display: none;
   }
