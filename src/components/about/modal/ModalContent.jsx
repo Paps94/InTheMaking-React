@@ -4,6 +4,7 @@ import Achievements from "../Achievements";
 import PersonalInfo from "../PersonalInfo";
 import Experience from "../Experience";
 import Education from "../Education";
+import FunFacts from "../FunFacts";
 
 const ModalContent = () => {
   return (
@@ -47,11 +48,15 @@ const ModalContent = () => {
 
       <div className="col-12 mt-5 achievements-wrapper">
         <h3>Fun Facts About Me</h3>
-        <Achievements />
+        <FunFacts />
       </div>
       {/* End  Achievements */}
 
-
+      <div className="col-12 mt-5 achievements-wrapper">
+        <h3>Achievements</h3>
+        <Achievements />
+      </div>
+      {/* End  Achievements */}
     </>
   );
 };

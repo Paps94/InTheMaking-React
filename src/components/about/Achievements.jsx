@@ -1,10 +1,8 @@
 import React from "react";
 
 const achievementsContent = [
-  { title: "195", subTitle1: "Loki and Billie (my cats) added a bug in my code by stepping on the keyboard", subTitle2: "Only to realise during testing.." },
-  { title: "53", subTitle1: "I considered turning them into ", subTitle2: "Rugs and coats" },
-  { title: "32", subTitle1: "Confilcting tattoo Ideas ", subTitle2: "But cannot decide which one to do :(" },
-  { title: "74", subTitle1: "Times I considered giving up.. ", subTitle2: "But didn't!" },
+  { subTitle1: "Alibaba Integration", subTitle2: "Created a REST API integration for Alibaba able to handle thousands of requests per minute." },
+  { subTitle1: "Amazon Freight", subTitle2: "Created a light Laravel hub on a tight timeframe for Amazon to integrate them with our custom clearance systems in order for them to be able to send shipments into Canada from the USA" },
 ];
 
 const Achievements = () => {
@@ -13,9 +11,8 @@ const Achievements = () => {
       {achievementsContent.map((val, i) => (
         <div className="col-lg-6 col-md-12 col-sm-12 mt-3 mb-3" key={i}>
           <div className="box-stats with-margin">
-            <h3 className="poppins-font position-relative">{val.title}</h3>
-            <p className="open-sans-font m-0 position-relative text-uppercase">
-              {val.subTitle1} <span className="d-block text-end fw-bolder">{val.subTitle2}</span>
+            <p className="fw-bolder open-sans-font m-0 position-relative">
+              <span className="text-uppercase">{val.subTitle1}</span><span className="d-block fw-light">{val.subTitle2}</span>
             </p>
           </div>
         </div>
