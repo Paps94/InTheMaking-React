@@ -2,7 +2,7 @@ import React from "react";
 
 const achievementsContent = [
   { subTitle1: "Alibaba Integration", subTitle2: "Created a REST API integration for Chinese multinational technology company, Alibaba Group, which is able to handle thousands of requests per minute." },
-  { subTitle1: "Amazon Freight", subTitle2: "Created a light Laravel hub on a tight timeframe for American multinational technology company, Amazon, to integrate them with our custom clearance systems. With the goal to send shipments into Canada from the USA." },
+  { subTitle1: "Amazon Freight", subTitle2: "Created a light Laravel hub on a tight timeframe for American multinational technology company, Amazon, to integrate them with our custom clearance systems. The goal is to send shipments into Canada from the USA." },
   { subTitle1: "Quality of Life Improvements", subTitle2: "I got approval from the head office to implement some QOL improvements for other departments. I.e Replace and optimise the code (Python) currently running through the warehouse scanners with something more modernm like C++." },
 ];
 
