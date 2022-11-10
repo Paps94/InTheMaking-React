@@ -1,8 +1,8 @@
 import React from "react";
 
 const fanFactsContent = [
-  { title: "195", subTitle1: "Loki and Billie (my cats) added a bug in my code by stepping on the keyboard", subTitle2: "Only to realise during testing.." },
-  { title: "53", subTitle1: "I considered turning them into ", subTitle2: "Rugs and coats" },
+  { title: "195", subTitle1: "times Loki and Billie (my cats) added a bug in my code by stepping on the keyboard", subTitle2: "Only to realise during testing.." },
+  { title: "53", subTitle1: "times I considered turning them into ", subTitle2: "Rugs and coats" },
   { title: "32", subTitle1: "Confilcting tattoo Ideas ", subTitle2: "But cannot decide which one to do :(" },
   { title: "74", subTitle1: "Times I considered giving up.. ", subTitle2: "But didn't!" },
 ];
