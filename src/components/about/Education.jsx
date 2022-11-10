@@ -7,7 +7,7 @@ const educationContent = [
     institute: "University of Liverpool",
     details: `The highlight of my studies was my dissertation which was the replacement of traditional
               rental agreements with smart contracts that govern the rules of the tenancy agreement
-              and get rid of rental agencies in the meantime. #getRidOfTheMiddleMan`,
+              and get rid of rental agencies in the meantime. #GetRidOfTheMiddleMan`,
   }
 ];
 
