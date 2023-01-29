@@ -4,9 +4,8 @@ import Sidebar from "../components/header/Sidebar";
 import Hero from "../components/slider/Hero";
 import About from "../components/about/About";
 import Resume from "../components/resume/Resume";
-// import Blog from "../components/blog/Blog";
+import Blog from "../components/blog/Blog";
 import Address from "../components/Address";
-import ComingSoon from "../components/miscellaneous/ComingSoon";
 import Swal from 'sweetalert2';
 
 const Home = () => {
@@ -95,11 +94,10 @@ const Home = () => {
           <div className="edina_tm_title">
             <h3>Blog <img src="img/svg/pen-clip.svg" alt="icon" /></h3>
             <p>
-                Some people write in diaries, others in blog posts... I write here! This willl be my professional digital diary on my journey through Web3 to perhaps help others also joining this sector for the first time!
+                Some people write in diaries ohers keep to themselves... I write on Medium and go through the trouble of showcasing it here! This willl be my professional digital diary on my journey through Web3 and work/life in general!
             </p>
-            <ComingSoon />
+            <Blog />
           </div>
-            {/* <Blog /> */}
         </div>
       </div>
       {/* End Blog */}

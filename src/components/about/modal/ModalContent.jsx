@@ -52,10 +52,10 @@ const ModalContent = () => {
       </div>
       {/* End  Achievements */}
 
-      <div className="col-12 mt-5 achievements-wrapper">
+      {/* <div className="col-12 mt-5 achievements-wrapper">
         <h3>Achievements</h3>
         <Achievements />
-      </div>
+      </div> */}
       {/* End  Achievements */}
     </>
   );

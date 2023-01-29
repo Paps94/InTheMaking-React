@@ -1,11 +1,8 @@
 @charset "utf-8";
 
 /*	Author: Antreas Papadopoulos
-/*	This file is made for CURRENT TEMPLATE
 
-
-
-/*--------------------------------f-------------------*/
+/*---------------------------------------------------*/
 /*
 /*---------------------------------------------------*/
 
@@ -402,3 +399,101 @@
 .social i {
   color: #000;
 }
+
+/*-------------------------Loader--------------------------*/
+.loader {
+  position: relative;
+  text-align: center;
+}
+
+svg {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  fill: none;
+}
+
+.load {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 570;
+  stroke-width: 20px;
+}
+.load.one {
+  stroke: #34495e;
+  animation: load 1.5s infinite;
+}
+.load.two {
+  stroke: #7795b4;
+  animation: load 1.5s infinite;
+  animation-delay: 0.1s;
+}
+.load.three {
+  stroke: #d9e2ea;
+  animation: load 1.5s infinite;
+  animation-delay: 0.2s;
+}
+.point {
+  animation: bounce 1s infinite ease-in-out;
+}
+.point.one {
+  fill: #34495e;
+  animation-delay: 0s;
+}
+.point.two {
+  fill: #7795b4;
+  animation-delay: 0.1s;
+}
+.point.three {
+  fill: #d9e2ea;
+  animation-delay: 0.2s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes load {
+  0% {
+    stroke-dashoffset: 570;
+  }
+  50% {
+    stroke-dashoffset: 530;
+  }
+  100% {
+    stroke-dashoffset: 570;
+    transform: rotate(360deg);
+  }
+}
+/*---------------------End of Loader----------------------------*/
+
+/*---------------------Blog Post Card----------------------------*/
+
+.post-info{
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+.post-info .post-title {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  border-radius: 5px;
+  padding: 2px 5px;
+  background-color: rgba(245,248,252, .9);
+}
+
+.post-info .post-date {
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  border-radius: 5px;
+  padding: 2px 5px;
+  background-color: rgba(245,248,252, .9);
+}
+
+/*---------------------End of Blog Post Card----------------------------*/
