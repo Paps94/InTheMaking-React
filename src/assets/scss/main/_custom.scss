@@ -475,7 +475,6 @@ svg {
 .post-info{
   width: auto;
   height: auto;
-  z-index: -1;
 }
 
 .post-info .post-title {
@@ -484,8 +483,12 @@ svg {
   left: 25px;
   border-radius: 5px;
   padding: 2px 5px;
-  background-color: rgba(245,248,252, .9);
+  background-color: rgba(245,248,252, .6);
+  position: absolute;
+  z-index: 2;
+  max-width: 447px;
 }
+
 
 .post-info .post-date {
   position: absolute;
@@ -493,7 +496,10 @@ svg {
   left: 25px;
   border-radius: 5px;
   padding: 2px 5px;
-  background-color: rgba(245,248,252, .9);
+  background-color: rgba(245,248,252, .6);
+  position: absolute;
+  z-index: 2;
+  max-width: 447px;
 }
 
 /*---------------------End of Blog Post Card----------------------------*/
