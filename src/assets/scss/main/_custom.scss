@@ -472,34 +472,83 @@ svg {
 
 /*---------------------Blog Post Card----------------------------*/
 
-.post-info{
-  width: auto;
-  height: auto;
+
+.blog_card {
+  background: white;
+  text-decoration: none;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+  top: 0;
+  transition: all 0.1s ease-in;
+  margin: 20px 0;
+  border-radius: 5px;
+  border: 1px solid #f5f8fc;
+}
+.blog_card:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+.blog_card article {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blog_card h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+.blog_card span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
-.post-info .post-title {
-  position: absolute;
-  top: 10px;
-  left: 25px;
-  border-radius: 5px;
-  padding: 2px 5px;
-  background-color: rgba(245,248,252, .6);
-  position: absolute;
-  z-index: 2;
-  max-width: 447px;
+.blog_card .thumb {
+  background-size: cover;
+  background-position: center center;
 }
 
+.blog_card .thumb img{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
 
-.post-info .post-date {
-  position: absolute;
-  bottom: 10px;
-  left: 25px;
+.blog_tooltip span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-transform: none;
+}
+
+.blog_card_categories  {
+  margin: 20px 0;
+}
+
+.blog_card_category {
+  display: inline-block;
+  background-color: rgb(229, 231, 235);
   border-radius: 5px;
-  padding: 2px 5px;
-  background-color: rgba(245,248,252, .6);
-  position: absolute;
-  z-index: 2;
-  max-width: 447px;
+  padding-left: 0.75rem; /* 12px */
+  padding-right: 0.75rem; /* 12px */  
+  padding-top: 0.25rem; /* 4px */
+  padding-bottom: 0.25rem; /* 4px */  
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  font-weight: 600!important;
+  color: rgb(55, 65, 81);
+  margin-right: 0.5rem!important; /* 8px */
+  margin-top: 0.5rem!important; /* 8px */
 }
 
 /*---------------------End of Blog Post Card----------------------------*/

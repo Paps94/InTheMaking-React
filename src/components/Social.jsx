@@ -6,6 +6,10 @@ const SocialShare = [
     link: "https://www.instagram.com/antreas.paps/",
   },
   {
+    iconName: <i className="fa-2x fa-brands fa-medium"></i>,
+    link: "https://medium.com/@antreasPaps",
+  },
+  {
     iconName: <i className="fa-2x fa-brands fa-linkedin"></i>,
     link: "https://www.linkedin.com/in/antreas-papadopoulos-819891158/",
   },

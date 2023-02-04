@@ -133,7 +133,7 @@ const Service = () => {
     <div className="resume_list">
       <ul>
       {projects.map((val, i) => (
-        <ProjectCard projectDetails={val} />
+        <ProjectCard key={i} projectDetails={val} />
       ))}
       </ul>
     </div>

@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
-import ReactTooltip from "react-tooltip";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import axios from "axios";
 import Loader from "../miscellaneous/Loader";
 import CommingSoon from "../miscellaneous/ComingSoon";
+import BlogCard from "./BlogCard";
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
-  const [isLoading, setLoading] = useState(true);
+  const [isLoading, setLoading] = useState(true); 
 
   useEffect(() => {
     axios({
@@ -17,7 +17,6 @@ const Blog = () => {
       url: 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@antreasPaps'
     }, requestOptions)
     .then((result) => {
-      console.log(result);
       length = result.data.items.length;
       setPosts(result.data.items);
       setLoading(false);
@@ -25,7 +24,6 @@ const Blog = () => {
   }, []);
 
   var length = 0;
-  var categories = "";
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
   var requestOptions = {
@@ -74,43 +72,7 @@ const Blog = () => {
         <Slider {...settings}>
         {posts.map((post, i) => (
           <li key={i}>
-            <div className="list_inner">
-              <div className="image">
-                <a
-                  href={post.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="details"
-                >
-                  <img
-                    src={post.thumbnail}
-                    data-tip
-                    data-for={post.title + i}
-                    alt="portfolio"
-                  />
-                  <ReactTooltip
-                    id={post.title + i}
-                    place="bottom"
-                    type="light"
-                    effect="float"
-                    className="tooltip-wrapper"
-                  >
-                    <div>
-                      <h5>Categories</h5>
-                      {post.categories.forEach(element => {
-                        let asd = element.charAt(0).toUpperCase() + element.slice(1);
-                        categories += asd + ' ';
-                      })}
-                      <span>{categories}</span>
-                    </div>
-                  </ReactTooltip>
-                </a>
-              </div>
-              <div className="post-info">
-                <h5 className="post-title">{post.title}</h5>
-                <h5 className="post-date">{new Date(post.pubDate).toLocaleDateString('en-gb', { weekday:"long", year:"numeric", month:"short", day:"numeric"})}</h5>
-              </div>
-            </div>
+            <BlogCard post={post} key={i} index={i} />
           </li>
         ))}
         </Slider>
