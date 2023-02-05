@@ -54,7 +54,7 @@ const About = () => {
 
   return (
     //    ABOUT
-    <div className="edina_tm_about" id="about">
+    <div className="edina_section edina_tm_about" id="about">
       <div className="container">
         <div className="about_title">
           <h3>About Me  <img src="img/svg/about.svg" alt="icon" /></h3>

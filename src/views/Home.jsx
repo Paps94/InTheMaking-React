@@ -5,6 +5,7 @@ import Hero from "../components/slider/Hero";
 import About from "../components/about/About";
 import Resume from "../components/resume/Resume";
 import Blog from "../components/blog/Blog";
+import Subordinates from "../components/subordinates/Subordinates";
 import Address from "../components/Address";
 import Swal from 'sweetalert2';
 
@@ -74,7 +75,7 @@ const Home = () => {
       <About />
       {/* End Hero */}
 
-      <div className="edina_tm_services" id="projects">
+      <div className="edina_section edina_tm_services" id="projects">
         <div className="container">
           <div className="edina_tm_title">
             <h3>Projects <img src="img/svg/projects.svg" alt="icon" /></h3>
@@ -89,7 +90,7 @@ const Home = () => {
       </div>
       {/* End Resume*/}
 
-      <div className="edina_tm_news" id="blog">
+      <div className="edina_section edina_tm_news" id="blog">
         <div className="container">
           <div className="edina_tm_title">
             <h3>Blog <img src="img/svg/pen-clip.svg" alt="icon" /></h3>
@@ -102,7 +103,18 @@ const Home = () => {
       </div>
       {/* End Blog */}
 
-      <div className="edina_tm_contact" id="contact">
+      <div className="edina_section edina_tm_subordinates" id="subordinates">
+        <div className="container">
+          <div className="edina_tm_title">
+            <h3>Subordinates <img src="img/svg/cat.svg" alt="icon" /></h3>
+            <p>Pick your fighter! On the left we have Loki, the somehow undefeated champion. On the right giving him a run for his money with have Billie!</p>
+          </div>
+          <Subordinates />
+        </div>
+      </div>
+      {/* End Resume*/}
+
+      <div className="edina_section edina_tm_contact" id="contact">
         <div className="container">
           <div className="edina_tm_title">
             <h3>Contact <img src="img/svg/contact.svg" alt="icon" /></h3>

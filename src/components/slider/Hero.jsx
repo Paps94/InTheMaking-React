@@ -12,7 +12,7 @@ const heroContent = {
 const Hero = () => {
   return (
     //    HERO
-    <div className="edina_tm_hero" id="home">
+    <div className="edina_section edina_tm_hero" id="home">
       <div className="content">
         <div className="img-shape" data-aos="fade-up" data-aos-duration="1200">
           <img

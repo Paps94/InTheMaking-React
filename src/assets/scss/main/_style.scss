@@ -154,6 +154,9 @@ h6 {
   clear: both;
   float: left;
 }
+.edina_section:nth-child(even) {
+  background-color: #f5f8fc;
+}
 #preloader {
   position: fixed;
   left: 0;
@@ -628,7 +631,6 @@ body.dark .loader_line:after {
   min-height: 100vh;
   position: relative;
   display: flex;
-  background-color: #f5f8fc;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -1241,7 +1243,6 @@ body.dark .loader_line:after {
   height: auto;
   clear: both;
   float: left;
-  background-color: #f5f8fc;
   padding: 120px 0px 90px 0px;
   @media screen and (max-width: 991px) {
     padding: 90px 0px 60px 0px;
@@ -1773,7 +1774,6 @@ body.dark .loader_line:after {
   height: auto;
   clear: both;
   float: left;
-  background-color: #f5f8fc;
   padding: 120px 0px 140px 0px;
   @media screen and (max-width: 991px) {
     padding: 90px 0px 110px 0px;
@@ -2068,6 +2068,193 @@ body.modal {
   color: #1a1a1a;
 }
 
+
+/*---------------------------------------------------*/
+/*	09) EDINA SUBORDINATES
+/*---------------------------------------------------*/
+
+.edina_tm_title {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  margin-bottom: 25px;
+}
+.edina_tm_title h3 {
+  font-size: 45px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  line-height: 1;
+}
+
+.edina_tm_subordinates {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding: 120px 0px 90px 0px;
+  @media screen and (max-width: 991px) {
+    padding: 90px 0px 60px 0px;
+  }
+
+  .edina_tm_title p {
+    text-align: left;
+  }
+}
+
+.edina_tm_subordinates .subordinate-main {
+  position: relative;
+  clear: both;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  border-radius: 5px;
+  background: -moz-linear-gradient(to top, #e0dedf 50%, #34495e 50%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%,#e0dedf), color-stop(50%,#34495e));
+  background: -webkit-linear-gradient(to top, #e0dedf 50%,#34495e 50%);
+  background: -o-linear-gradient(to top, #e0dedf 50%,#34495e 50%);
+  background: -ms-linear-gradient(to top, #e0dedf 50%,#34495e 50%);
+  // background: linear-gradient(to left, #e0dedf 50%,#34495e 50%);
+  background: linear-gradient(to top, #e0dedf,#34495e);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.edina_tm_subordinates .subordinate-main .divider {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: #e0dedf;
+  margin: 50px 0 40px 0;
+}
+
+.edina_tm_subordinates .subordinate-main .divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #34495e;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+}
+
+.divider::after {
+  content: "VS";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #e0dedf;
+  font-size: 35px;
+  font-weight: 900;
+  padding: 5px;
+}
+
+.edina_tm_subordinates .subordinate-main .loki {
+  position: relative;
+  height: 50%;
+  color: #e0dedf;
+
+  .subordinate_qualities {
+    margin-left: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: baseline;
+    gap: 15px;
+
+    span {
+      background-color: rgba(224,222,223, .2);
+      border-radius: 5px;
+      padding-right: 10px;
+
+      svg {
+        width: auto;
+        margin: 0 10px;     
+      }
+    }
+  }
+  
+  h1 {
+    color: #e0dedf;
+    margin-left: 7%;
+
+    span {
+      font-size: 16px;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.subordinate-main img {
+  z-index: 10;
+  position: absolute;
+  height: 600px;
+}
+
+.loki_top_left {
+  top: -65px;
+  left: -235px;
+}
+
+.loki_top_left:hover {
+  animation: crescendo .5s alternate infinite ease-in;
+}
+
+@keyframes crescendo {
+  0%   {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.edina_tm_subordinates .subordinate-main .billie {
+  position: relative;
+  color: #e0dedf;
+
+  .subordinate_qualities {
+    margin-left: 7%;
+    margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: baseline;
+    gap: 15px;
+
+    span {
+      background-color: rgba(52, 73, 94, .6);
+      color: #e0dedf;
+      border-radius: 5px;
+      padding-right: 10px;
+
+      svg {
+        width: auto;
+        margin: 0 10px;
+      }
+    }
+  }
+
+  h1 {
+    position: relative;
+    left: 7%;
+    color: #34495e ;
+    
+    span {
+      font-size: 16px;
+      text-transform: capitalize;
+    }
+  }  
+}
+.billie_bot_right {
+  bottom: -120px;
+  right: -330px;
+}
+
+.billie_bot_right:hover {
+  animation: crescendo .5s alternate infinite ease-in;
+}
+
 /*---------------------------------------------------*/
 /*	10) EDINA CONTACT
 /*---------------------------------------------------*/
@@ -2077,7 +2264,6 @@ body.modal {
   height: auto;
   clear: both;
   float: left;
-  background-color: #f5f8fc;
   padding: 120px 0px;
   @media screen and (max-width: 991px) {
     padding: 90px 0px;

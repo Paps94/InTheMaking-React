@@ -15,6 +15,7 @@ const sidebarContent = [
   { icon: "about", itemName: "About", itemRoute: "#about", activeClass: "" },
   { icon: "code", itemName: "Projects", itemRoute: "#projects", activeClass: "",},
   { icon: "pen-clip", itemName: "Blog", itemRoute: "#blog", activeClass: "" },
+  { icon: "cat", itemName: "Subordinates", itemRoute: "#subordinates", activeClass: "" },
   { icon: "contact",    itemName: "Contact",    itemRoute: "#contact",    activeClass: "",  },
 ];
 
@@ -130,6 +131,7 @@ const Sidebar = () => {
                 "about",
                 "projects",
                 "blog",
+                "subordinates",
                 "contact",
               ]}
               activeNavClass="active"

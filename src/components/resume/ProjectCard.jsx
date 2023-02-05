@@ -14,7 +14,7 @@ const ProjectCard = (props) => {
   }
 
   return (
-    <div>
+    <>
       <li className="w-auto" data-aos={props.projectDetails.animation} data-aos-duration="1200">
         <Tilt>
           <div className="list_inner project-card" onClick={toggleProjectModal}>
@@ -56,7 +56,7 @@ const ProjectCard = (props) => {
         {/* End modal box news */}
       </Modal>
       {/* End Modal Motion Graphy */}
-    </div>
+    </>
   );
 };
 

@@ -130,13 +130,13 @@ const Service = () => {
   ];
 
   return (
-    <div className="resume_list">
+    <>
       <ul>
       {projects.map((val, i) => (
         <ProjectCard key={i} projectDetails={val} />
       ))}
       </ul>
-    </div>
+    </>
   );
 };
 
