@@ -6,6 +6,10 @@
   background-color: #111319;
   color: #a9afc3;
 }
+
+.theme-dark .edina_section:nth-child(even) {
+  background-color: #191c26;
+}
 .theme-dark::-webkit-scrollbar {
   width: 11px;
 }
@@ -108,7 +112,7 @@
   background-color: #191c26;
 }
 .theme-dark .edina_tm_services ul li .list_inner {
-  background-color: #000;
+  background-color: #111319;
 }
 .theme-dark.light {
   background: #fff;
@@ -185,7 +189,7 @@
     border-bottom-color: #333;
   }
   .toggler-menu span {
-    background: #000;
+    background: #111319;
   }
   .toggler-menu {
     background: #fff;
@@ -212,10 +216,6 @@
 }
 .theme-dark .edina_tm_news ul li .news_details .title {
   color: #fff;
-}
-
-.theme-dark .edina_tm_contact {
-  background-color: #191c26;
 }
 
 .theme-dark .edina_tm_contact .extra_info .wrapper > li .list_inner {
@@ -441,4 +441,8 @@ body.intro .loader_line:after {
 
 .theme-dark .solution_cards_box .solution_card:hover .solu_title h3 {
   color: #fff!important;
+}
+
+.theme-dark .blog_card article, .theme-dar .blog_card {
+  background-color: #191c26;
 }
