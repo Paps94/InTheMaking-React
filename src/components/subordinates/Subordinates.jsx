@@ -14,7 +14,7 @@ const Subordinates = () => {
             <img data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="750" className="billie_bot_right" src="img/subordinates/billie.png" alt="Billie" />
 
             <div className="loki">
-                <h1>Loki <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000"data-aos-anchor-placement="top-bottom">- devour of treats | destructor of deposits | bane of my existence | master explorer | cuddle bug</span></h1>
+                <h1>Loki </h1><span className="subTitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000"data-aos-anchor-placement="top-bottom">- devour of treats | destructor of deposits | bane of my existence | master explorer | cuddle bug</span>
                 <div className="subordinate_qualities">
                     <span ><FontAwesomeIcon icon={faHandFist}/>Will introduce you to his right paw if you pick him up</span>
                     <span ><FontAwesomeIcon icon={faUtensils}/>Will start causing damage around if breakfast is late.</span>
@@ -33,18 +33,20 @@ const Subordinates = () => {
             </div>
             <div className="divider"></div>
             <div className="billie">
-                <h1>Billie <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-anchor-placement="top-bottom">- collector of strings | fetcher of balls | throw-up machine | 100% evil | dick head</span></h1>
+                <h1> Billie</h1><span className="subTitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-anchor-placement="top-bottom">- collector of strings | fetcher of balls | throw-up machine | 98% evil | dick head</span>
                 <div className="subordinate_qualities">
                     <span ><FontAwesomeIcon icon={faGhost}/>Dissapears as soon as she hears the door</span>
                     <span ><FontAwesomeIcon icon={faEye}/>Likes to watch you sleep</span>
                     <span ><FontAwesomeIcon icon={faComment}/>100% thinks she is better than you</span>
-                    <span ><FontAwesomeIcon icon={faDog}/>I am about 85% certain she thinks she is a dog</span>
                     <span ><FontAwesomeIcon icon={faPeopleArrows}/>Will only approach you if she needs something</span>
                     <span ><FontAwesomeIcon icon={faBaseball}/>Will bring you a ball to play fetch but never brings it back</span>
+
                     <span ><FontAwesomeIcon icon={faToiletPaper}/>Actually a great scooper 10/7</span>
                     <span ><FontAwesomeIcon icon={faDumpsterFire}/>Has a weird obsession with strings.</span>
                     <span ><FontAwesomeIcon icon={faBroom}/>Is the reason the roomba is always stuck.</span>
-                    <span ><FontAwesomeIcon icon={faUtensils}/>She is way too picky with food in comparison to how little variety she can digest without throwing up.</span>
+                    <span ><FontAwesomeIcon icon={faUtensils}/>She is way too picky with food considering how little variety she can digest without throwing up.</span>
+                    <span ><FontAwesomeIcon icon={faDog}/>Thinks she is a dog</span>
+
                 </div>
             </div>
         </div>

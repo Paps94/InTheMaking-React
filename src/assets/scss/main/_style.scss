@@ -2178,11 +2178,13 @@ body.modal {
   h1 {
     color: #e0dedf;
     margin-left: 7%;
-
-    span {
-      font-size: 16px;
-      text-transform: capitalize;
-    }
+    display: inline;
+    width: auto;
+  }
+  .subTitle {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
   }
 }
 
@@ -2213,11 +2215,12 @@ body.modal {
 .edina_tm_subordinates .subordinate-main .billie {
   position: relative;
   color: #e0dedf;
+  text-align: right;
 
   .subordinate_qualities {
-    margin-left: 7%;
-    margin-right: 5%;
+    margin-right: 12%;
     display: flex;
+    justify-content: flex-end;
     flex-wrap: wrap;
     vertical-align: baseline;
     gap: 15px;
@@ -2237,14 +2240,19 @@ body.modal {
 
   h1 {
     position: relative;
-    left: 7%;
-    color: #34495e ;
-    
-    span {
-      font-size: 16px;
-      text-transform: capitalize;
-    }
+    color: #34495e;
+    display: inline;
+    width: auto;
   }  
+  .subTitle {
+    margin-right: 12%;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #34495e;
+    display: inline;
+    width: auto;
+  }
 }
 .billie_bot_right {
   bottom: -120px;
@@ -2253,6 +2261,67 @@ body.modal {
 
 .billie_bot_right:hover {
   animation: crescendo .5s alternate infinite ease-in;
+}
+
+@media only screen and (max-width: 1600px) {
+  .subordinate-main img {
+    height: 400px;
+  }
+
+  .edina_tm_subordinates .subordinate-main .billie .subordinate_qualities {
+    margin-right: 0%;
+    margin-left: 12%;
+  }
+
+  .edina_tm_subordinates .subordinate-main .billie h1 {
+    margin-right: 0%;
+  }
+
+  .edina_tm_subordinates .subordinate-main .billie .subTitle {
+    margin-right: 0%;
+  }
+
+  .edina_tm_subordinates .subordinate-main .loki .subordinate_qualities {
+    margin-left: 0%;
+    margin-right: 10%;
+    margin-top: 30px;
+
+  }
+
+  .edina_tm_subordinates .subordinate-main .loki h1 {
+    margin-left: 0%;
+  }
+  .subordinate-main img {
+    height: 400px;
+  }
+
+  .loki_top_left {
+    top: -55px;
+    left: 80%;
+  }
+  
+  .billie_bot_right {
+    bottom: -20px;
+    right: 70%;
+  }
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .subordinate-main img {
+    display: none;
+  }
+
+  .edina_tm_subordinates .subordinate-main .loki, .edina_tm_subordinates .subordinate-main .billie {
+    text-align: center;
+  }
+
+  .edina_tm_subordinates .subordinate-main .loki .subordinate_qualities, .edina_tm_subordinates .subordinate-main .billie .subordinate_qualities {
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 /*---------------------------------------------------*/
