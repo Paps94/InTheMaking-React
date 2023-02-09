@@ -5,8 +5,11 @@ const experienceContent = [
     year: "   March 2019 - Present",
     position: " Systems Engineer",
     compnayName: "Customs Clearance Ltd - London",
-    details: `  Full stack development and maintenance of multiple platforms and integrations through APIs with big clients like Alibaba and Amazon.
-                I am mostly working on our own PHP Framework but used Laravel for certain smaller projects.`,
+    details: `Full stack development, maintenance and integration of multiple platforms from legacy to a modern version. I am mostly working on our own PHP 
+              Framework but used Laravel for certain smaller projects like a payment platform and admin panels with API integrations for clients like Alibaba and Amazon.. 
+              Writting of tests using PHPUnit for smoother push to production. We do not use a front end framework like React or Vue hence why I am learning that on my own 
+              free time (This website is written using React).
+                `,
   },
   {
     year: "August 2018 - January 2019",
