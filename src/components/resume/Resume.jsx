@@ -5,6 +5,16 @@ const Service = () => {
 
   const projects = [
     {
+      name: "Custom Password Generator",
+      icon: "key",
+      gitLink: "https://github.com/Paps94/Custom-Password-Generator",
+      animation: "zoom-in",
+      description: "My first attempt at creating a password generating class in an attempt to get more into the core basics of authentication in general!",
+      tools: {
+        PHP: "Pure PHP for the class creation",
+      },
+    },
+    {
       name: "Arbitrage Trading Bot",
       title: "Logic & Breakdown",
       description: "This bot does NOT attempt to read the future and predict fluctuations in the price of cryptocurrencies (ERC20) aka Ethereum based. \n ERC20 tokens are created and hosted on the Ethereum blockchain, whereas bitcoin is the native currency of its respective blockchain. ERC20 tokens are stored and sent using Ethereum addresses and transactions, and use gas to cover transaction fees. \nThe key word is 'Arbitrage', by definition arbitrage is the simultaneous buying and selling of securities, currency, or commodities in different markets or in derivative forms in order to take advantage of differing prices for the same asset. - Google Dictionary. \nYou are using the small differences in cryptocurrency prices in different decentralised exchanges to attempt to make profit. For example if an ERC20 token is sold $100 on Exchange 1 and for $102 on Exchange 2 you will buy an ERC20 token from Exchange #1 and sell in Exchange #2 making a profit of almost $2 (almost because of fees). This is the high level idea of it. \nAdditionally this bot will also connect to a Flash Loan provider. A flash loan allows you to take out an unguaranteed loan with the obligation to repay the loan in the same transaction. If it's determined that you can't repay the loan, the loan is reversed as if it never occurred",
@@ -21,18 +31,6 @@ const Service = () => {
       animation: "fade-left"
     },
     {
-      name: "Minimal Kickstarter Clone",
-      description: "An attempt to clone my favourite past time activity, which is funding projects I don't need on Kickstarted. \n Of course the point was not an exact replica but a toned down version to see how a blockchain could handle such an idea. \n You have a factory class that is responsible for creating each project and can also retrive deployed campaigns (aka projects) and within each project you can find some basic functionality such as pledging to a project and a category (different categories have different rewards), the campaign creator (aka the contract owner) can also create a request such as spending x amount of money to y trader for materials example, he/she can create more pledge categories and cancel the campaign. Pledgers can vote on the owners requests ffor spending their pledge money etc",
-      tools: {
-        Remix: "Local smart contract development",
-        Mocha: "Testing smart contract(s)",
-        Javascript: "Setting up of deployment and compiling scripts + React for project setup",
-      },
-      icon: "kickstarter",
-      gitLink: "https://github.com/Paps94/Web3-Kickstarter-Clone",
-      animation: "fade-down"
-    },
-    {
       name: "Lottery Replica",
       icon: "lottery",
       gitLink: "https://github.com/Paps94/Web3-Lottery",
@@ -45,6 +43,18 @@ const Service = () => {
         Mocha: "Testing smart contract(s)",
         Javascript: "React (Front-end)",
       },
+    },
+    {
+      name: "Minimal Kickstarter Clone",
+      description: "An attempt to clone my favourite past time activity, which is funding projects I don't need on Kickstarted. \n Of course the point was not an exact replica but a toned down version to see how a blockchain could handle such an idea. \n You have a factory class that is responsible for creating each project and can also retrive deployed campaigns (aka projects) and within each project you can find some basic functionality such as pledging to a project and a category (different categories have different rewards), the campaign creator (aka the contract owner) can also create a request such as spending x amount of money to y trader for materials example, he/she can create more pledge categories and cancel the campaign. Pledgers can vote on the owners requests ffor spending their pledge money etc",
+      tools: {
+        Remix: "Local smart contract development",
+        Mocha: "Testing smart contract(s)",
+        Javascript: "Setting up of deployment and compiling scripts + React for project setup",
+      },
+      icon: "kickstarter",
+      gitLink: "https://github.com/Paps94/Web3-Kickstarter-Clone",
+      animation: "fade-down"
     },
     {
       name: "NFT - Generation and Minting",
