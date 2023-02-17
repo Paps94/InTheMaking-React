@@ -453,12 +453,14 @@ body.dark .loader_line:after {
   width: 100%;
   display: flex;
   height: auto;
+  min-height: 181px;
   clear: both;
   float: left;
   border-bottom: 1px solid #cbd3d9;
   padding: 40px;
   @media screen and (max-width: 1199px) {
     padding: 20px;
+    min-height: 0px;
   }
 }
 .edina_tm_sidebar .logo img{
@@ -1234,10 +1236,7 @@ body.dark .loader_line:after {
   margin-bottom: 25px;
   line-height: 1;
 }
-.edina_tm_title p {
-  // margin-bottom: 30px;
-  // max-width: 600px;
-}
+
 .edina_tm_services {
   width: 100%;
   height: auto;
@@ -3257,9 +3256,6 @@ a {
   height: 45px;
   z-index: 99;
   cursor: pointer;
-  @media screen and (max-width: 1199px) {
-    display: none;
-  }
 }
 .beny_tm_totop {
   position: relative;

@@ -1,6 +1,6 @@
 
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ScrollspyNav from "react-scrollspy-nav";
 import Swal from 'sweetalert2';
 
@@ -27,8 +27,24 @@ const sidebarFooterContent = {
 };
 
 const Sidebar = () => {
-  const [merakiClicked, setmerakiClicked] = useState(false);
   const [click, setClick] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Image is displayed after scrolling for 500 pixels
+    const toggleVisibility = () => {
+      if (window.pageYOffset > 500) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", toggleVisibility);
+
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
+
 
   const handleMerakiClick = () => {
     Swal.fire({
@@ -119,7 +135,8 @@ const Sidebar = () => {
                 src={`img/logo/${logo2}.png`}
                 alt="brand"
               />
-            <img className="hero_image_small aos-init aos-animate" data-aos-anchor=".experience" data-aos="fade-down-left" data-aos-duration="1200" data-aos-delay="200" src={`${sidebarFooterContent.avatar}`} alt="my face"/>
+              {isVisible && (<img className="hero_image_small" data-aos="zoom-in" data-aos-duration="1200"src={`${sidebarFooterContent.avatar}`} alt="my face"/>)}
+            
           </div>
           {/* End .logo */}
 
