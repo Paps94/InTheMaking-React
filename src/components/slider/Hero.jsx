@@ -1,13 +1,24 @@
 import React from "react";
 import Social from "../Social";
 
+
+const calculateExperience = () => {
+  let today = new Date(),
+  startDate = new Date('Mar 2019'),
+  diff = today.getTime() - startDate.getTime(),
+  years = Math.floor(diff / 31556736000);
+  return `${years}+ years`;
+}
+
 const heroContent = {
   shapeImage: "hero-shape",
   heroImage: "about2.jpeg",
   name: "Antreas Papadopoulos",
-  description: `Full stack developer with 3+ years in the Logistics industry. Aspiring to
+  description: `Full-Stack Developer with ` + calculateExperience() + ` in the Logistics industry. Aspiring to
   specialise in Smart Contract development and Web3 applications!`,
 };
+
+
 
 const Hero = () => {
   return (

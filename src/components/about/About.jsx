@@ -28,27 +28,27 @@ const About = () => {
     {
       key: 2,
       name: "Laravel",
-      skillPercent: "85",
+      skillPercent: "70",
     },
     {
       key: 3,
       name: "JavaScript",
-      skillPercent: "85",
+      skillPercent: "90",
     },
     {
       key: 4,
       name: "React",
-      skillPercent: "80",
+      skillPercent: "65",
     },
     {
       key: 5,
       name: "MySQL",
-      skillPercent: "90",
+      skillPercent: "85",
     },
     {
       key: 6,
       name: "Web3",
-      skillPercent: "60",
+      skillPercent: "45",
     },
   ];
 

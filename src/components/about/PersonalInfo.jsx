@@ -31,7 +31,7 @@ const PersonalInfo = () => {
     days_diff = Math.floor(diff % 31556736000 / 86400000),
     //1 month has 30.4167 days
     months = Math.floor(days_diff / 30.4167);
-    return `${years} years ${months} months (Full Stack Developer)`;
+    return `${years} years ${months} months (Full-Stack Developer)`;
   }
 
   const personalInfoContent = [

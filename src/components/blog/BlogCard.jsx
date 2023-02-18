@@ -1,6 +1,5 @@
 import ReactTooltip from "react-tooltip";
 
-
 const BlogCard = (props) => {
     const post = props.post;
 
