@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect} from "react";
 import Social from "../Social";
 
 
@@ -13,14 +13,39 @@ const calculateExperience = () => {
 const heroContent = {
   shapeImage: "hero-shape",
   heroImage: "about2.jpeg",
-  name: "Antreas Papadopoulos",
+  name: "ANTREAS PAPADOPOULOS",
   description: `Full-Stack Developer with ` + calculateExperience() + ` in the Logistics industry. Aspiring to
   specialise in Smart Contract development and Web3 applications!`,
 };
 
 
-
 const Hero = () => {
+
+  useEffect(() => {
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let interval = null;
+    let target = document.getElementById("target");
+    let iteration = 0;
+    clearInterval(interval);
+    interval = setInterval(() => {
+      target.innerText = target.innerText
+        .split("")
+        .map((letter, index) => {
+          if(index < iteration) {
+            return document.getElementById("target").getAttribute('data-value')[index];
+          }
+          return letters[Math.floor(Math.random() * 26)]
+        })
+        .join("");
+      
+      if(iteration >= document.getElementById("target").getAttribute('data-value').length){ 
+        clearInterval(interval);
+      }
+      
+      iteration += 1 / 3;
+    }, 50);
+  }, [])
+  
   return (
     //    HERO
     <div className="edina_section edina_tm_hero" id="home">
@@ -34,10 +59,12 @@ const Hero = () => {
         </div>
         <div className="extra">
           <h1
+            id="target"
             className="name"
             data-aos="fade-up"
             data-aos-duration="1200"
             data-aos-delay="100"
+            data-value={heroContent.name}
           >
             {heroContent.name}
           </h1>
