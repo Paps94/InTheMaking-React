@@ -549,11 +549,13 @@ svg {
 /*---------------------End of Blog Post Card----------------------------*/
 
 .calendly-badge-widget {
-  right: 75px!important;
-  bottom: 20px!important;
-  border-radius: 25px;
+  right: 80px;
+  bottom: 20px;
 
   .calendly-badge-content {
     background: #ED4B22!important;
+    height: 44px;
+    border-radius: 6px;
+    padding: 10px 15px;
   }
 }
