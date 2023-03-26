@@ -24,6 +24,8 @@ chrome-user-data
 *.swp
 *.swo
 firebase/
+.firebase
+.vs
 
 packages/react-devtools-core/dist
 packages/react-devtools-extensions/chrome/build
