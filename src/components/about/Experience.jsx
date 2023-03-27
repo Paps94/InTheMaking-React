@@ -2,7 +2,15 @@ import React from "react";
 
 const experienceContent = [
   {
-    year: "   March 2019 - Present",
+    year: "   April 2023 - Present",
+    position: " Full Stack Web Developer",
+    compnayName: "Port of London Authority - London",
+    details: `I am the first web developer they hired in an upcoming upscale of their internal systems. Role is more focus towards back-end developerment but
+              since I am judge, jury and executioner when it comes to all future projects I get to decide on the tech stacks, architecture and design of each project.
+              It's a very exciting oportunity with much to learn!`,
+  },
+  {
+    year: "   March 2019 - April 2023",
     position: " Systems Engineer",
     compnayName: "Customs Clearance Ltd - London",
     details: `Full stack development, maintenance and integration of multiple platforms from legacy to a modern version. I am mostly working on our own PHP 

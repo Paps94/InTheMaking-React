@@ -5,6 +5,17 @@ const Service = () => {
 
   const projects = [
     {
+      name: "React & Tailwind Admin Panel",
+      icon: "chart-line",
+      gitLink: "https://github.com/Paps94/Default-React-Tailwind",
+      animation: "fade-left",
+      description: "A project to learn 2 modern frameworks (React & Tailwind), as well as good practices and of course ability for easy future project jumpstarts with said 2 frameworks!",
+      tools: {
+        Javascript: "React for all the front-end logic",
+        Css: "Tailwind for more rapid front-end development",
+      },
+    },
+    {
       name: "Custom Password Generator",
       icon: "key",
       gitLink: "https://github.com/Paps94/Custom-Password-Generator",
