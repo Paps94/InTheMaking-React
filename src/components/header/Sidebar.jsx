@@ -3,20 +3,11 @@
 import React, { useState, useEffect } from "react";
 import ScrollspyNav from "react-scrollspy-nav";
 import Swal from 'sweetalert2';
+import navbarContent from "../../data/navbarContent.json";
 
 // logo name
 const logo = "tab_logo";
 const logo2 = "tab_logo_white";
-
-// sidebar content
-const sidebarContent = [
-  { icon: "house", itemName: "Home", itemRoute: "#home", activeClass: "active" },
-  { icon: "about", itemName: "About", itemRoute: "#about", activeClass: "" },
-  { icon: "code", itemName: "Projects", itemRoute: "#projects", activeClass: "",},
-  { icon: "pen-clip", itemName: "Blog", itemRoute: "#blog", activeClass: "" },
-  { icon: "cat", itemName: "Subordinates", itemRoute: "#subordinates", activeClass: "" },
-  { icon: "contact",    itemName: "Contact",    itemRoute: "#contact",    activeClass: "",  },
-];
 
 // sidebar footer bottom content
 const sidebarFooterContent = {
@@ -155,7 +146,7 @@ const Sidebar = () => {
               scrollDuration="100"
             >
               <ul className="anchor_nav">
-                {sidebarContent.map((val, i) => (
+                {navbarContent.map((val, i) => (
                   <li key={i}>
                     <div className="list_inner">
                       <a

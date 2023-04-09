@@ -1,20 +1,10 @@
 import React from "react";
-
-const educationContent = [
-  {
-    year: "Septermber 2015 - June 2018",
-    degree: "Computer Science Bsc",
-    institute: "University of Liverpool",
-    details: `The highlight of my studies was my dissertation which was the replacement of traditional
-              rental agreements with smart contracts that govern the rules of the tenancy agreement
-              and get rid of rental agencies in the meantime. #GetRidOfTheMiddleMan`,
-  }
-];
+import education from "../../data/education.json";
 
 const Education = () => {
   return (
     <ul>
-      {educationContent.map((val, i) => (
+      {education.map((val, i) => (
         <li key={i}>
           <div className="icon">
             <i className="fas fa-graduation-cap"></i>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Skills from "../skills/Skills";
 import Modal from "react-modal";
 import ModalContent from "./modal/ModalContent";
+import skills from "../../data/skills.json";
 
 Modal.setAppElement("#root");
 
@@ -18,39 +19,6 @@ const About = () => {
     years = Math.floor(diff / 31556736000);
     return `${years}+ Years`;
   }
-
-  const skillsContent = [
-    {
-      key: 1,
-      name: "PHP",
-      skillPercent: "95",
-    },
-    {
-      key: 2,
-      name: "Laravel",
-      skillPercent: "70",
-    },
-    {
-      key: 3,
-      name: "JavaScript",
-      skillPercent: "90",
-    },
-    {
-      key: 4,
-      name: "React",
-      skillPercent: "65",
-    },
-    {
-      key: 5,
-      name: "MySQL",
-      skillPercent: "85",
-    },
-    {
-      key: 6,
-      name: "Web3",
-      skillPercent: "45",
-    },
-  ];
 
   return (
     //    ABOUT
@@ -88,7 +56,7 @@ const About = () => {
               </p>
               <div className="wrapper">
                 <div className="dodo_progress">
-                  {skillsContent.map((val, i) => (
+                  {skills.map((val, i) => (
                     <Skills key={val.key} name={val.name} skillPercent={val.skillPercent} />
                   ))}
                 </div>

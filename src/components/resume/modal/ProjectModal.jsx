@@ -42,8 +42,8 @@ const ProjectModal = (props) => {
             <a style={{marginRight: "20px"}} href={props.projectDetails.gitLink} target="_blank" rel="noreferrer">
               <i class="fa-2x fab fa-github"></i>
             </a>
-            {props.projectDetails.link ?
-              <a href={props.projectDetails.link} target="_blank" rel="noreferrer">
+            {props.projectDetails.webLink ?
+              <a href={props.projectDetails.webLink} target="_blank" rel="noreferrer">
                 <i class="fa-2x fab fa-chrome"></i>
                 <i style={{marginLeft: "10px"}} class="fa-2x fab fa-firefox-browser"></i>
               </a>
